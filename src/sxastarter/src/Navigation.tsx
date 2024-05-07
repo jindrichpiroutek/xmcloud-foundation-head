@@ -1,4 +1,4 @@
-import config from 'temp/config';
+//import config from 'temp/config';
 import getPublicUrl from 'temp/get-public-url';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore editors.
