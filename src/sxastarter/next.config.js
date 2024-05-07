@@ -3,6 +3,7 @@ const plugins = require('./src/temp/next-config-plugins') || {};
 
 const getPublicUrl = require('./src/temp/get-public-url');
 //const publicUrl = jssConfig.publicUrl;
+const publicUrl = getPublicUrl;
 
 /**
  * @type {import('next').NextConfig}
