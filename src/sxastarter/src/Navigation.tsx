@@ -2,7 +2,8 @@ import config from 'temp/config';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore editors.
 // If you're not supporting Sitecore editors, you can remove this.
-const publicUrl = config.publicUrl;
+//const publicUrl = config.publicUrl;
+import getPublicUrl from 'temp/get-public-url';
 
 const Navigation = (): JSX.Element => (
   <div>
