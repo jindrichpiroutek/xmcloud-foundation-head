@@ -3,14 +3,14 @@ const plugins = require('./src/temp/next-config-plugins') || {};
 
 const getPublicUrl = require('./src/temp/get-public-url');
 //const publicUrl = jssConfig.publicUrl;
-const publicUrl = getPublicUrl;
+const publicUrl = getPublicUrl();
 
 /**
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
   // Set assetPrefix to our public URL
-  assetPrefix: getPublicUrl,
+  assetPrefix: publicUrl,
 
   // Allow specifying a distinct distDir when concurrently running app in a container
   distDir: process.env.NEXTJS_DIST_DIR || '.next',
