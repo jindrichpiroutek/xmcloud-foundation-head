@@ -11,6 +11,7 @@ import Scripts from 'src/Scripts';
 // If you're not supporting the Experience Editor, you can remove this.
 import getPublicUrl from 'temp/get-public-url';
 //const publicUrl = config.publicUrl;
+const publicUrl = getPublicUrl;
 
 interface LayoutProps {
   layoutData: LayoutServiceData;
